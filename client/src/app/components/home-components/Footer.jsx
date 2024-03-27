@@ -47,8 +47,8 @@ function Footer() {
           <section className="py-4 ">
             <div className="text-center text-md-start mt-5">
               <div className="row mt-3">
-                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4 text-end">
+                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-md-start text-sm-center">
+                  <h6 className="text-uppercase fw-bold mb-4 text-md-end text-sm-center">
                     <Image
                       src="/logo.png"
                       width={63}
@@ -93,7 +93,7 @@ function Footer() {
                   <h6 className="text-uppercase fw-bold mb-4">اتصل بنا</h6>
                   <p>
                     <i className="fas fa-envelope me-3" />
-                    elmohands1133@gmail.com
+                    support@alsayedalaa.com.eg
                   </p>
                   <p>
                     <i className="fas fa-phone me-3" /> 01006169399
@@ -101,7 +101,7 @@ function Footer() {
                   <p>
                     <i className="fas fa-home me-3" />
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13663.397706190128!2d30.953201099999998!3d31.113916799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7abf54d2621c7%3A0xc30467f760bbeef2!2z2YXZiNmC2YEg2YPZgdixINin2YTYtNmK2K4g2KfZhNmC2K_ZitmF!5e0!3m2!1sen!2seg!4v1710984024767!5m2!1sen!2seg"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d874867.0028143933!2d30.473491767932067!3d31.069428850960456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f78f3d85e7c633%3A0x815604b7e09ae092!2z2YXYpNiz2LPYqSDYp9mE2LPZitiv2LnZhNin2KEg2YXYp9mD2YrZhtin2Kog2KfZhNix2K7Yp9mFINmI2YTZhNis2LHYp9mG2YrYqg!5e0!3m2!1sen!2seg!4v1711494413723!5m2!1sen!2seg"
                       width={300}
                       height={200}
                       style={{ borderRadius: "11px" }}

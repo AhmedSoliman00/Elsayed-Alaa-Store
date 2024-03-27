@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import img from "../../../../public/image/robot-smile.png";
+
 import axios from "axios";
 import Link from "next/link";
 import Modal from "../product/Modal";
@@ -88,9 +88,13 @@ function Products() {
                     </Link>
                     <button
                       type="button"
+                      style={{
+                        cursor: product.count === 0 ? "auto" : "pointer",
+                      }}
                       className="btn btn-primary d-flex align-items-center justify-content-around fs-5"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-toggle={product.count > 0 ? "modal" : ""}
+                      disabled={product.count > 0 ? false : true}
+                      data-bs-target={product.count > 0 ? "#exampleModal" : ""}
                       onClick={() => {
                         window.localStorage.setItem("price", product.price);
                         window.localStorage.setItem(
@@ -139,7 +143,7 @@ function Products() {
           <Image
             src="/icon/Vector.png"
             width={950}
-            height={550}
+            height={450}
             alt="vector"
             className="position-absolute"
           />
@@ -162,7 +166,13 @@ function Products() {
             </div>
           </div>
           <div className="col-lg-6 col-sm-12">
-            <Image src={img} alt="consulting" className="robot" />
+            <Image
+              src="/image/robot-smile.png"
+              alt="consulting"
+              className="robot"
+              width={385}
+              height={450}
+            />
           </div>
         </div>
       </div>
