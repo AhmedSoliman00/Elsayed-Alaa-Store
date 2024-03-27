@@ -6,12 +6,12 @@
   "/products/[product]/page": "app/products/[product]/page.js",
   "/products/page": "app/products/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/admin/order-suppord/page": "app/admin/order-suppord/page.js",
   "/admin/login/page": "app/admin/login/page.js",
   "/admin/page": "app/admin/page.js",
-  "/admin/order-suppord/page": "app/admin/order-suppord/page.js",
   "/admin/products/add-product/page": "app/admin/products/add-product/page.js",
-  "/admin/products/update-product/[product]/page": "app/admin/products/update-product/[product]/page.js",
   "/admin/products/page": "app/admin/products/page.js",
+  "/admin/products/update-product/[product]/page": "app/admin/products/update-product/[product]/page.js",
   "/admin/orders/page": "app/admin/orders/page.js",
   "/admin/order-support/page": "app/admin/order-support/page.js"
 }

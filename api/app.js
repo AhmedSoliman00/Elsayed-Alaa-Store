@@ -12,6 +12,11 @@ var dotenv = require("dotenv");
 dotenv.config();
 
 app.use(cors());
+app.use(
+  cors({
+    origin: ["http://77.37.51.182", "http://alsayedalaa.com.eg"],
+  })
+);
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
