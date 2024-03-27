@@ -13,6 +13,12 @@ function Products() {
   const [client, setClient] = useState(false);
   const [current, setCurrent] = useState(1);
   const [data, setData] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [step, setStep] = useState(1);
+  const openModal = () => {
+    setIsOpen(true);
+    setStep(1); // إعادة الخطوة إلى الأولى عند فتح النموذج
+  };
   const getData = async () => {
     try {
       await axios
@@ -95,7 +101,7 @@ function Products() {
                         </span>
                       )}
                       <div className="image-product">
-                        <div id="carouselExample" className="carousel slide">
+                        <div id={product.createdAt} className="carousel slide">
                           <div className="carousel-inner">
                             {product &&
                               product.image.map((img, i) => {
@@ -120,7 +126,7 @@ function Products() {
                           <button
                             className="carousel-control-prev"
                             type="button"
-                            data-bs-target="#carouselExample"
+                            data-bs-target={`#${product.createdAt}`}
                             data-bs-slide="prev"
                           >
                             <span
@@ -132,7 +138,7 @@ function Products() {
                           <button
                             className="carousel-control-next"
                             type="button"
-                            data-bs-target="#carouselExample"
+                            data-bs-target={`#${product.createdAt}`}
                             data-bs-slide="next"
                           >
                             <span
@@ -171,6 +177,7 @@ function Products() {
                                 "productName",
                                 product.name
                               );
+                              openModal();
                             }}
                           >
                             اطلب الأن
@@ -211,7 +218,12 @@ function Products() {
           </div>
         </div>
       </div>
-      <Modal />
+      <Modal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        step={step}
+        setStep={setStep}
+      />
     </div>
   ) : (
     <Loader />
