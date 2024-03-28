@@ -14,7 +14,7 @@ dotenv.config();
 app.use(cors());
 app.use(
   cors({
-    origin: ["http://77.37.51.182", "http://alsayedalaa.com.eg"],
+    origin: ["http://77.37.51.182", "https://alsayedalaa-eg.com", "http://alsayedalaa-eg.com"],
   })
 );
 app.use(logger("dev"));
@@ -32,11 +32,11 @@ mongoose
     console.log(err);
   });
 
-app.use("/", indexRouter);
-app.use("/forms", usersRouter);
+app.use("/api/", indexRouter);
+app.use("/api/forms", usersRouter);
 app.use(
-  "/public/images",
-  express.static(path.join(__dirname, "public/images"))
+  "/api/public/images",
+  express.static(path.join(__dirname, "api/public/images"))
 );
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
