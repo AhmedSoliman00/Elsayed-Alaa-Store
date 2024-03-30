@@ -36,7 +36,7 @@ app.use("/api/", indexRouter);
 app.use("/api/forms", usersRouter);
 app.use(
   "/api/public/images",
-  express.static(path.join(__dirname, "api/public/images"))
+  express.static(path.join(__dirname, "public/images"))
 );
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
