@@ -13,6 +13,17 @@ export default function RootLayout({ children }) {
   const pathname = usePathname();
   useEffect(() => {
     document.title = "مؤسسة السيد علاء";
+
+    const metaDescription = document.createElement("meta");
+    metaDescription.name = "description";
+    metaDescription.content =
+      "مؤسسة السيد علاء , السيد علاء , ماكينات الرخام , ماكينات الجرانيت";
+
+    document.head.appendChild(metaDescription);
+
+    return () => {
+      document.head.removeChild(metaDescription);
+    };
   }, [pathname]);
 
   return (

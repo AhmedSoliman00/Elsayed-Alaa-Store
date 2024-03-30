@@ -160,9 +160,9 @@ function Products() {
               </p>
             </div>
             <div className="button">
-              <button className="btn btn-primary fw-bolder fs-5">
+              <Link className="btn btn-primary fw-bolder fs-5" href="/#help">
                 احصل علي استشارة
-              </button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 col-sm-12">

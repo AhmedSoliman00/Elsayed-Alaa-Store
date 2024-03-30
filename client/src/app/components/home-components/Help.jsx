@@ -40,7 +40,7 @@ function Help() {
     }
   };
   return (
-    <div className="help">
+    <div className="help" id="help">
       <div className="main-heading mt-5">
         <h1 className="text-primary">هل تريد المساعدة</h1>
       </div>

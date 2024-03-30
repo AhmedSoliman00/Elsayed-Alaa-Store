@@ -147,7 +147,7 @@ function Page() {
                       />
                     </div>
                     <div className="col-12">
-                      <button className="btn btn-primary d-flex justify-content-center align-items-center w-25 fs-5">
+                      <button className="btn btn-primary d-flex justify-content-center align-items-center w-50 fs-5">
                         <span>ارسال</span>
                         <span>
                           <i className="bi bi-arrow-up-left me-3"></i>
@@ -183,7 +183,7 @@ function Page() {
                       تواصل معنا علي البريد الالكتروني
                     </h4>
                     <p>فريقنا متواجد هنا للمساعدة</p>
-                    <p className="text-blue">support@alsayedalaa.com.eg</p>
+                    <p className="text-blue">info@alsayedalaa-eg.com</p>
                   </div>
                 </div>
                 <div className="col-12 d-flex justify-content-around">
@@ -198,7 +198,7 @@ function Page() {
                   <div className="data w-75">
                     <h4 className="fw-bold">للمهن</h4>
                     <p>أرسل سيرتك الذاتية على</p>
-                    <p className="text-blue">support@alsayedalaa.com.eg</p>
+                    <p className="text-blue">info@alsayedalaa-eg.com</p>
                   </div>
                 </div>
                 <div className="col-12 d-flex justify-content-around">

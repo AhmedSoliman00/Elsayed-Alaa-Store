@@ -14,13 +14,13 @@
   border-radius: 20px;
 }
 .slider-item.middle {
-  background-image: url("/image/image-1.png");
+  background-image: url("/image/image-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slider-item.right {
-  background-image: url("/image/image-2.png");
+  background-image: url("/image/image-2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

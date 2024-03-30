@@ -44,7 +44,7 @@ function Serveces() {
             </button>
           </li>
         </ul>
-        <div className="tab-content" id="pills-tabContent">
+        <div className="tab-content px-3" id="pills-tabContent">
           <div
             className="tab-pane fade show active"
             id="pills-home"

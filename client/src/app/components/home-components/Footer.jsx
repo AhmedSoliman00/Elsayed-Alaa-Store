@@ -56,7 +56,7 @@ function Footer() {
                       alt="logo-footer"
                     />
                   </h6>
-                  <p className="f-5 fw-bold text-end">
+                  <p className="f-5 fw-bold text-end info">
                     من المهم جدًا أن يتمكن العميل من الحصول على بعض دعم العملاء
                   </p>
                   <div className="socials d-flex w-75 justify-content-between">
@@ -93,7 +93,7 @@ function Footer() {
                   <h6 className="text-uppercase fw-bold mb-4">اتصل بنا</h6>
                   <p>
                     <i className="fas fa-envelope me-3" />
-                    support@alsayedalaa.com.eg
+                    info@alsayedalaa-eg.com
                   </p>
                   <p>
                     <i className="fas fa-phone me-3" /> 01006169399

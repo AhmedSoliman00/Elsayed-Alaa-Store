@@ -35,11 +35,6 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "#09090A",
   },
-  hideOnDesktop: {
-    [theme.breakpoints.up("md")]: {
-      display: "none",
-    },
-  },
 }));
 
 const listItems = [
