@@ -9,10 +9,10 @@ function IsEmpty({ title, description, page }) {
       style={{ minHeight: "calc(100vh - 150px)" }}
     >
       <Image src="/image/empty.png" alt="Empty" width={75} height={135} />
-      <div className="title my-3">
+      <div className="title my-3 text-center">
         <h4>{title && title}</h4>
       </div>
-      <div className="description">
+      <div className="description text-center">
         <p className="text-secondary">{description && description}</p>
       </div>
       {page === "product" && (

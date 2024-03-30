@@ -274,6 +274,11 @@ div.product-container.py-3.px-5
 .sub-title-class {
   font-size: 10px;
 }
+.slider-container iframe {
+  width: 65vw;
+  height: 500px;
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
   .pyment .modal.fade {
     width: auto !important;
@@ -338,6 +343,11 @@ div.product-container.py-3.px-5
     text-align: center !important;
   }
   .footer .socials {
+    margin: 0 auto;
+  }
+  .slider-container iframe {
+    width: 100%;
+    height: 400px;
     margin: 0 auto;
   }
 }

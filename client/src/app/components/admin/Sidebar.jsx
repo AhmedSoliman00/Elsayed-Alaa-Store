@@ -76,11 +76,7 @@ export default function App() {
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
       <Box>
-        <Avatar
-          className={classes.avatar}
-          src="https://i.ibb.co/rx5DFbs/avatar.png"
-          alt="Juaneme8"
-        />
+        <Avatar className={classes.avatar} src="/logo.png" alt="Juaneme8" />
       </Box>
       <Divider />
       <Box

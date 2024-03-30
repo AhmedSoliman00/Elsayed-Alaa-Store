@@ -14,7 +14,11 @@ export const socials = [
     link: "https://www.snapchat.com/add/elsayed_a6786?share_id=tZrcNCjtAlA&locale=ar-EG",
     icon: <i className="bi bi-snapchat"></i>,
   },
-  // { id: 4, link: "", icon: <i className="bi bi-whatsapp"></i> },
+  {
+    id: 4,
+    link: "https://wsend.co/21006169399",
+    icon: <i className="bi bi-whatsapp"></i>,
+  },
   {
     id: 5,
     link: "https://www.tiktok.com/@elsayed_alaa_foundation?_t=8kNES3pFV0n&_r=1",
@@ -24,5 +28,10 @@ export const socials = [
     id: 6,
     link: "https://www.youtube.com/@user-in7qd3ml9s",
     icon: <i className="bi bi-youtube"></i>,
+  },
+  {
+    id: 7,
+    link: "https://twitter.com/alaafoundation",
+    icon: <i className="bi bi-twitter-x"></i>,
   },
 ];

@@ -213,7 +213,7 @@ function Page() {
                   <div className="data w-75">
                     <h4 className="fw-bold">هاتف</h4>
                     <p>
-                      من الاثنين إلى الجمعة من الساعة 8 صباحًا حتى الساعة 5
+                      من الاثنين إلى الجمعة من الساعة 9 صباحًا حتى الساعة 7
                       مساءً.
                     </p>
                     <p className="text-blue">01006169399</p>
@@ -227,9 +227,7 @@ function Page() {
                   <div className="data w-75">
                     <h4 className="fw-bold">عنوان المؤسسة</h4>
                     <p>المقر الرئيسي لمكتبنا</p>
-                    <p className="text-blue">
-                      السنبلاوين - المنصورة، محافظة الدقهلية
-                    </p>
+                    <p className="text-blue">برج نور العرب - السنبلاوين</p>
                   </div>
                 </div>
               </div>
