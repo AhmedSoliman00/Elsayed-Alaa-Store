@@ -69,7 +69,7 @@ function Products() {
                 key={product._id}
                 style={{ minHeight: "40vh" }}
               >
-                <Image
+                <img
                   src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${product.image[0]}`}
                   className="d-block mx-auto"
                   width={849}

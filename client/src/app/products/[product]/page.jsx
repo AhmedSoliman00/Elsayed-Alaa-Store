@@ -63,7 +63,7 @@ function Product() {
                       product.image.map((img, index) => {
                         return (
                           <SwiperSlide key={index}>
-                            <Image
+                            <img
                               src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                               alt="product"
                               width={325}
@@ -88,7 +88,7 @@ function Product() {
                       product.image.map((img, index) => {
                         return (
                           <SwiperSlide key={index}>
-                            <Image
+                            <img
                               src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                               alt="product"
                               width={150}

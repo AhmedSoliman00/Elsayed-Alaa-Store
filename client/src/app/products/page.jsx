@@ -112,7 +112,7 @@ function Products() {
                                     }`}
                                     key={img}
                                   >
-                                    <Image
+                                    <img
                                       src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                                       className="d-block w-100"
                                       alt="product-images"

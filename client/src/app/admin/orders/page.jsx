@@ -212,7 +212,7 @@ export const Modal = ({ data }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <Image
+              <img
                 src={`${process.env.NEXT_PUBLIC_API}/public/images/orders/${data}`}
                 alt="image"
                 width={450}
