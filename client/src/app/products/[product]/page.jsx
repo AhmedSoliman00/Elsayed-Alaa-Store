@@ -64,7 +64,6 @@ function Product() {
                         return (
                           <SwiperSlide key={index}>
                             <Image
-                              // src={img}
                               src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                               alt="product"
                               width={325}
@@ -90,7 +89,6 @@ function Product() {
                         return (
                           <SwiperSlide key={index}>
                             <Image
-                              // src={img}
                               src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                               alt="product"
                               width={150}
@@ -109,10 +107,7 @@ function Product() {
                 </div>
                 <hr />
                 <div className="price mb-3">
-                  <h1>{product?.price}</h1>
-                  <h5 className="" style={{ color: "rgba(0, 0, 0, 0.5)" }}>
-                    <del>{product?.discount} </del>
-                  </h5>
+                  <h3>السعر حسب الاتفاق</h3>
                 </div>
                 <hr />
                 <div className="description mb-3">
@@ -129,7 +124,6 @@ function Product() {
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                         onClick={() => {
-                          window.localStorage.setItem("price", product.price);
                           window.localStorage.setItem(
                             "productName",
                             product.name

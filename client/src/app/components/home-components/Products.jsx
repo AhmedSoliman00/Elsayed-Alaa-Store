@@ -96,7 +96,6 @@ function Products() {
                       disabled={product.count > 0 ? false : true}
                       data-bs-target={product.count > 0 ? "#exampleModal" : ""}
                       onClick={() => {
-                        window.localStorage.setItem("price", product.price);
                         window.localStorage.setItem(
                           "productName",
                           product.name

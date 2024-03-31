@@ -17,7 +17,7 @@ function Products() {
   const [step, setStep] = useState(1);
   const openModal = () => {
     setIsOpen(true);
-    setStep(1); // إعادة الخطوة إلى الأولى عند فتح النموذج
+    setStep(1);
   };
   const getData = async () => {
     try {
@@ -169,10 +169,6 @@ function Products() {
                               product.count > 0 ? "#exampleModal" : ""
                             }
                             onClick={() => {
-                              window.localStorage.setItem(
-                                "price",
-                                product.price
-                              );
                               window.localStorage.setItem(
                                 "productName",
                                 product.name
