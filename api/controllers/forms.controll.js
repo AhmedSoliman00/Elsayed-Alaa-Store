@@ -3,6 +3,7 @@ const ProductsModel = require("../models/Products.model");
 const PaymentsForm = require("../models/PymentsForm.model");
 const addPayment = async (req, res) => {
   const data = req.body;
+  if (typeof(data.zip) != Number) return res.status(404).json({msd: "zip not number"})
   const image = req.uniqueSuffix;
   data.image = image;
   try {
