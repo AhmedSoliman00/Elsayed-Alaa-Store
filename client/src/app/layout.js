@@ -13,7 +13,7 @@ import { ToastContainer } from "react-toastify";
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   useEffect(() => {
-    document.title = "مؤسسة السيد علاء";
+    document.title = " مؤسسة السيد علاء لتصنيع ماكينات الرخام والجرانيت والأوناش";
 
     const metaDescription = document.createElement("meta");
     metaDescription.name = "description";
