@@ -407,7 +407,6 @@ div.product-container.py-3.px-5
     height: 300px;
   }
   .carousel-inner .carousel-item.active img {
-    width: 80vw !important;
     height: 130px;
   }
   .slick-slide.slick-active.slick-center.slick-current {
