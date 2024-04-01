@@ -198,9 +198,6 @@ div.product-container.py-3.px-5
   padding: 6px;
   width: 163px !important;
 }
-.home .product .carousel.slide.pointer-event {
-  height: 550px !important;
-}
 #root
   > div
   > div
