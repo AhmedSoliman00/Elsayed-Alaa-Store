@@ -17,7 +17,7 @@ function Products() {
   const [step, setStep] = useState(1);
   const openModal = () => {
     setIsOpen(true);
-    setStep(1); // إعادة الخطوة إلى الأولى عند فتح النموذج
+    setStep(1);
   };
   const getData = async () => {
     try {
@@ -112,7 +112,7 @@ function Products() {
                                     }`}
                                     key={img}
                                   >
-                                    <Image
+                                    <img
                                       src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                                       className="d-block w-100"
                                       alt="product-images"
@@ -150,7 +150,7 @@ function Products() {
                         </div>
                       </div>
                       <div className="title-product">
-                        <h1>{product && product.name}</h1>
+                        <h3>{product && product.name}</h3>
                       </div>
                       <div className="description-product">
                         {product && product.description}
@@ -169,10 +169,6 @@ function Products() {
                               product.count > 0 ? "#exampleModal" : ""
                             }
                             onClick={() => {
-                              window.localStorage.setItem(
-                                "price",
-                                product.price
-                              );
                               window.localStorage.setItem(
                                 "productName",
                                 product.name

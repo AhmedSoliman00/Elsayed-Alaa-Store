@@ -124,14 +124,21 @@ button.nav-link {
   min-height: 483px;
   width: 360px;
 }
+#carouselExampleCaptions,
+#carouselExampleCaptions .carousel-inner {
+  height: 700px;
+}
+.carousel-caption {
+  bottom: -200px !important;
+}
 .product-page .product-container {
   background-color: var(--lightColor);
   border-radius: 25px;
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
 }
 .description-product {
-  height: 70px;
+  height: 50px;
   overflow: hidden;
 }
 .more-products .box-product {
@@ -170,7 +177,7 @@ button.nav-link {
 
 div.product-container.py-3.px-5
   > div
-  > div:nth-child(1)
+  > div
   > div.swiper.swiper-initialized.swiper-horizontal.swiper-rtl.swiper-backface-hidden.mySwiper2
   > div.swiper-wrapper
   > div.swiper-slide.swiper-slide-active
@@ -193,6 +200,21 @@ div.product-container.py-3.px-5
 }
 .home .product .carousel.slide.pointer-event {
   height: 550px !important;
+}
+#root
+  > div
+  > div
+  > div.col-lg-10.col-sm-12
+  > div
+  > div
+  > div
+  > div.products.px-5.mt-5
+  > div
+  > div
+  > div
+  > h6 {
+  height: 40px;
+  overflow: hidden;
 }
 @keyframes move {
   0%,
@@ -241,6 +263,7 @@ div.product-container.py-3.px-5
 .number span {
   cursor: pointer;
 }
+
 .number .minus,
 .number .plus {
   user-select: none;
@@ -278,6 +301,63 @@ div.product-container.py-3.px-5
   width: 65vw;
   height: 500px;
   margin: 0 auto;
+}
+
+#root
+  > div
+  > div
+  > div.col-lg-10.col-sm-12
+  > div
+  > div
+  > div
+  > div.products.px-5.mt-5
+  > div
+  > div
+  > div
+  > h6 {
+  height: 40px;
+  overflow: hidden;
+}
+#root > div > div > div.more > div > div.row > div > div > div.title-product {
+  height: 75px;
+  overflow: hidden;
+}
+#root
+  > div
+  > div
+  > div.col-lg-10.col-sm-12
+  > div
+  > div
+  > div
+  > div.products.px-5.mt-5
+  > div
+  > div
+  > div
+  > h3 {
+  height: 73px;
+  overflow: hidden;
+}
+.modal-content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 1000px) {
+  #root > div > div > div > div > div > div > div.box.d-none.d-md-block.mt-5 {
+    display: none !important;
+  }
+  #carouselExampleCaptions > div.carousel-inner > div > div > div > a,
+  #carouselExampleCaptions > div.carousel-inner > div > div > div > button {
+    font-size: 20px !important;
+  }
+  #carouselExampleCaptions > div.carousel-inner > div > div > div > button img {
+    width: 30px !important;
+    height: 25px !important;
+  }
+  #carouselExampleCaptions > div.carousel-inner > div > div > div {
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   .pyment .modal.fade {
@@ -331,7 +411,7 @@ div.product-container.py-3.px-5
   }
   .carousel-inner .carousel-item.active img {
     width: 80vw !important;
-    height: 100px;
+    height: 130px;
   }
   .slick-slide.slick-active.slick-center.slick-current {
     width: 390px !important;
@@ -350,7 +430,32 @@ div.product-container.py-3.px-5
     height: 400px;
     margin: 0 auto;
   }
+  #carouselExampleCaptions,
+  #carouselExampleCaptions .carousel-inner {
+    height: 250px;
+  }
+  .carousel-caption {
+    bottom: 30px !important;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+  .carousel-indicators {
+    bottom: 50px !important;
+  }
+  #carouselExampleCaptions > div.carousel-inner > div > div > div > a,
+  #carouselExampleCaptions > div.carousel-inner > div > div > div > button {
+    font-size: 14px !important;
+  }
+  #carouselExampleCaptions > div.carousel-inner > div > div > div > button img {
+    width: 30px !important;
+    height: 20px !important;
+  }
+  #carouselExampleCaptions > div.carousel-inner > div > div > div {
+    width: 100% !important;
+  }
 }
+
 @media (max-width: 400px) {
   .main-heading h1 {
     font-size: 19px !important;

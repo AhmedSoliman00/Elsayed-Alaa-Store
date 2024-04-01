@@ -8,6 +8,7 @@ import Footer from "./components/home-components/Footer";
 import { usePathname } from "next/navigation";
 import Head from "next/head"; // استيراد Head من next/head
 import { useEffect } from "react";
+import { ToastContainer } from "react-toastify";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
             }}
           ></div>
         )}
+
         <div
           style={{ zIndex: 99, minHeight: "100vh" }}
           className="position-relative"

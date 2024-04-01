@@ -99,7 +99,7 @@ function MoreProducts() {
                               }`}
                               key={img}
                             >
-                              <Image
+                              <img
                                 src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${img}`}
                                 className="d-block w-100"
                                 alt="image"
@@ -137,9 +137,12 @@ function MoreProducts() {
                   </div>
                 </div>
                 <div className="title-product">
-                  <h1>{product && product.name}</h1>
+                  <h3>{product && product.name}</h3>
                 </div>
-                <div className="description-product">
+                <div
+                  className="description-product"
+                  style={{ overflow: "hidden" }}
+                >
                   {product && product.description}
                 </div>
                 <div className="buttons-box d-flex mt-5">

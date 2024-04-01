@@ -12,14 +12,14 @@ function BoxProduct({ product, handleDelete }) {
         height: "350px",
       }}
     >
-      <Image
+      <img
         src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${product.image[0]}`}
         alt={product.name}
-        className=" mx-auto"
+        className="mx-auto"
         width={180}
         height={120}
       />
-      <h1>{product.name} </h1>
+      <h3>{product.name} </h3>
       <h6 className="text-secondary">{product.description}</h6>
       <Link
         className="btn btn-primary w-50 fw-bold"

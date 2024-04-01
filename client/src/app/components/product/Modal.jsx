@@ -6,6 +6,7 @@ import FormModalTwo, { lists } from "../FormModalTwo";
 import axios from "axios";
 import "react-step-progress/dist/index.css";
 import Congratlate from "./Congratlate";
+import { toast } from "react-toastify";
 
 function Modal() {
   const [image, setImage] = useState(null);
@@ -21,7 +22,6 @@ function Modal() {
     payment: "Bank",
     accountName: "",
     accountNum: "",
-    price: "",
     productName: "",
   });
   const handleChange = (e) => {
@@ -41,11 +41,9 @@ function Modal() {
       });
   };
   useEffect(() => {
-    const price = window.localStorage.getItem("price");
     const productName = window.localStorage.getItem("productName");
     setData((prevData) => ({
       ...prevData,
-      price: price,
       productName: productName,
     }));
   }, []);
@@ -63,7 +61,6 @@ function Modal() {
     try {
       const updatedData = {
         ...data,
-        price: window.localStorage.getItem("price"),
         productName: window.localStorage.getItem("productName"),
       };
       const formdata = new FormData();
@@ -77,7 +74,6 @@ function Modal() {
       formdata.append("zip", data.zip);
       formdata.append("payment", data.payment);
       formdata.append("accountName", data.accountName);
-      formdata.append("price", window.localStorage.getItem("price"));
       formdata.append(
         "productName",
         window.localStorage.getItem("productName")
@@ -96,11 +92,7 @@ function Modal() {
     console.log(e);
     window.localStorage.setItem("method", e);
   };
-  const RusaltForm = ({ labelOne, inputOne, labelTwo, handleChange }) => {
-    const [price, setPrice] = useState("");
-    useEffect(() => {
-      setPrice(window.localStorage.getItem("price"));
-    }, []);
+  const RusaltForm = ({ labelOne, inputOne, handleChange, labelTwo }) => {
     return (
       <div className="row row-gap-3" dir="rtl">
         {inputOne.map((inp, i) => {
@@ -136,19 +128,6 @@ function Modal() {
           );
         })}
         <div className="col-lg-6 col-sm-12">
-          <label htmlFor="price" className="form-label fs-6">
-            السعر النهائي للمنتج
-          </label>
-          <input
-            type="text"
-            required
-            className="form-control"
-            disabled
-            readOnly
-            value={price}
-          />
-        </div>
-        <div className="col-lg-6 col-sm-12">
           <label htmlFor="name" className="form-label fs-6">
             الاسم بالكامل
           </label>
@@ -160,7 +139,7 @@ function Modal() {
           />
         </div>
         <div className="col-lg-6 col-sm-12">
-          <label htmlFor="price" className="form-label fs-6">
+          <label htmlFor="name" className="form-label fs-6">
             {labelTwo}
           </label>
           <input

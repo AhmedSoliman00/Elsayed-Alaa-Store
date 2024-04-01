@@ -17,8 +17,6 @@ function Page() {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    price: "",
-    discount: "",
     count: "",
   });
   const handleChange = (e) => {
@@ -42,8 +40,6 @@ function Page() {
     });
     formdata.append("name", product.name);
     formdata.append("description", product.description);
-    formdata.append("price", product.price);
-    formdata.append("discount", product.discount);
     formdata.append("count", product.count);
     try {
       const data = await axios.post(
@@ -51,7 +47,7 @@ function Page() {
         formdata
       );
       setDisable(false);
-      // router.push("/admin/products");
+      router.push("/admin/products");
     } catch (error) {
       console.log(error);
       setDisable(false);

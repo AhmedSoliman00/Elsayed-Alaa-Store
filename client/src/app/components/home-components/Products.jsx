@@ -69,14 +69,14 @@ function Products() {
                 key={product._id}
                 style={{ minHeight: "40vh" }}
               >
-                <Image
+                <img
                   src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${product.image[0]}`}
                   className="d-block mx-auto"
                   width={849}
                   height={422}
                   alt="product-image"
                 />
-                <div className="carousel-caption d-none d-md-block text-dark">
+                <div className="carousel-caption d-md-block text-dark">
                   <h3>{product.name}</h3>
                   <p className="fs-5">{product.description}</p>
                   <div className="btns d-flex justify-content-evenly w-50 align-items-center mx-auto">
@@ -96,7 +96,6 @@ function Products() {
                       disabled={product.count > 0 ? false : true}
                       data-bs-target={product.count > 0 ? "#exampleModal" : ""}
                       onClick={() => {
-                        window.localStorage.setItem("price", product.price);
                         window.localStorage.setItem(
                           "productName",
                           product.name
