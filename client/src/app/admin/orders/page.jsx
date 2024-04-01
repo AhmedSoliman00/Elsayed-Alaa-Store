@@ -63,6 +63,7 @@ function Page() {
                   <tr>
                     <th scope="col">رقم الطلب</th>
                     <th scope="col">المنتج</th>
+                    <th scope="col">اجمالي التكلفة</th>
                     <th scope="col">رقم الهاتف</th>
                     <th scope="col">العميل</th>
                     <th scope="col">تاريخ الطلب</th>
@@ -77,6 +78,17 @@ function Page() {
                       <tr key={data._id}>
                         <th scope="row">{i + 1}</th>
                         <td>{data.productName}</td>
+                        <td>
+                          <span
+                            style={{
+                              backgroundColor: "rgba(229, 250, 234, 1)",
+                              color: "#22C55E",
+                            }}
+                            className="px-3 py-1 mx-auto fw-bold rounded-2 d-block text-center "
+                          >
+                            {data.price}
+                          </span>
+                        </td>
                         <td>{data.phone}</td>
                         <td>{data.name}</td>
                         <td>
@@ -212,7 +224,7 @@ export const Modal = ({ data }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_API}/public/images/orders/${data}`}
                 alt="image"
                 width={450}
