@@ -3,9 +3,10 @@ const ProductsModel = require("../models/Products.model");
 const PaymentsForm = require("../models/PymentsForm.model");
 const addPayment = async (req, res) => {
   const data = req.body;
-  if (typeof(data.zip) != Number) return res.status(404).json({msd: "zip not number"})
   const image = req.uniqueSuffix;
   data.image = image;
+  if (typeof data.zip != Number)
+    return res.status(404).json({ msd: "zip not number" });
   try {
     if (data.name == "" && data.email == "" && data.phone == "")
       return res.status(404).json({ msg: "لم يتم ارسال البيانات" });
