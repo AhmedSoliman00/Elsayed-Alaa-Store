@@ -71,8 +71,8 @@ function Products() {
               >
                 <img
                   src={`${process.env.NEXT_PUBLIC_API}/public/images/products/${product.image[0]}`}
-                  className="d-block mx-auto"
-                  width={849}
+                  className="d-block mx-auto w-100"
+                  style={{width: "100%"}}
                   height={422}
                   alt="product-image"
                 />
