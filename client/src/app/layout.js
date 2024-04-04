@@ -31,14 +31,21 @@ export default function RootLayout({ children }) {
     const metaDescription = document.createElement("meta");
     metaDescription.name = "description";
     metaDescription.content =
-      "مؤسسة السيد علاء , السيد علاء , ماكينات الرخام , ماكينات الجرانيت  , ماكينات الرخام , أحدث ماكينات الرخام , مكن رخام , تقطيع رخام , جلاية رخام , منشار رخام , جلي رخام , marble machines , marble and granite , marble , granite , أوناش عنبر , أوناش , فرايز , تقطيع جرانيت , تقطيع حجر صناعي , رخام , حجر صناعي ";
+      " مؤسسة السيد علاء لصناعه ماكينات الجرانيت والرخام ";
 
     document.head.appendChild(metaDescription);
+    const metaTag = document.createElement("meta");
+    metaTag.name = "keywords";
+    metaTag.content =
+      "مؤسسة السيد علاء , السيد علاء , ماكينات الرخام , ماكينات الجرانيت  , ماكينات الرخام , أحدث ماكينات الرخام , مكن رخام , تقطيع رخام , جلاية رخام , منشار رخام , جلي رخام , marble machines , marble and granite , marble , granite , أوناش عنبر , أوناش , فرايز , تقطيع جرانيت , تقطيع حجر صناعي , رخام , حجر صناعي ";
+
+    document.head.appendChild(metaTag);
 
     return () => {
       document.head.removeChild(googleTagScript);
       document.head.removeChild(gtagScript);
       document.head.removeChild(metaDescription);
+      document.head.removeChild(metaTag);
     };
   }, [pathname]);
 
