@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     const metaTag = document.createElement("meta");
     metaTag.name = "keywords";
     metaTag.content =
-      "مؤسسة السيد علاء , السيد علاء , ماكينات الرخام , ماكينات الجرانيت  , ماكينات الرخام , أحدث ماكينات الرخام , مكن رخام , تقطيع رخام , جلاية رخام , منشار رخام , جلي رخام , marble machines , marble and granite , marble , granite , أوناش عنبر , أوناش , فرايز , تقطيع جرانيت , تقطيع حجر صناعي , رخام , حجر صناعي ";
+      "مؤسسة السيد علاء , السيد علاء , ماكينات الرخام , ماكينات الجرانيت  , ماكينات الرخام , أحدث ماكينات الرخام , مكن رخام , تقطيع رخام , جلاية رخام , https://alsayedalaa-eg.com ,منشار رخام , جلي رخام , marble machines , marble and granite , marble , granite , أوناش عنبر , أوناش , فرايز , تقطيع جرانيت , تقطيع حجر صناعي , رخام , حجر صناعي ";
 
     document.head.appendChild(metaTag);
 
